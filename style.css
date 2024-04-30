@@ -226,6 +226,7 @@ ul
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    
 }
 .aside .nav-toggler span
 {
@@ -235,10 +236,11 @@ ul
     display: inline-block;
     position: relative;
 }
-.aside .nav-toggler.open span 
+.aside .nav-toggler.open span
 {
     background-color: transparent;
 }
+
 .aside .nav-toggler span::before
 {
     content:'';
@@ -246,7 +248,7 @@ ul
     width: 18px;
     background: var(--skin-color);
     position: absolute;
-    top: 6px;
+    top: -6px;
     left: 0;
 }
 .aside .nav-toggler.open span::before
@@ -261,7 +263,7 @@ ul
     width: 18px;
     background: var(--skin-color);
     position: absolute;
-    top: -6px;
+    top: 6px;
     left: 0;
 }
 .aside .nav-toggler.open span::after
@@ -269,6 +271,7 @@ ul
     transform: rotate(-45deg);
     top: 0;
 }
+
 .aside .nav 
 {
     margin-top: 200px;
@@ -787,15 +790,16 @@ border-bottom: 1px solid var(--bg-black-50);
 /* parte responsive*/
 @media (max-width:1199px)
 {
-    .section .container
-    {
-        padding-top: 70px;
-    }
+    
     .aside
     {
         left: -270px;
     }
-    .aside .nav-toggler
+    .aside.open
+    {
+        left: 0;
+    }
+    .aside .nav-toggler 
     {
         display: flex;
         left: 30px;
@@ -804,6 +808,7 @@ border-bottom: 1px solid var(--bg-black-50);
     {
         left: 300px;
     }
+    
     .section
     {
         left: 0;
@@ -823,6 +828,7 @@ border-bottom: 1px solid var(--bg-black-50);
 {
     .contact .contacto-info-item,
     .portafolio .portafolio-item,
+    .portafolio .portafolio-item-image-corta,
     .service .service-item
     {
         flex: 0 0 50%;
@@ -843,6 +849,7 @@ border-bottom: 1px solid var(--bg-black-50);
     .contact .contact-form .col-6
     .contact .contacto-info-item,
     .portafolio .portafolio-item,
+    .portafolio .portafolio-item-image-corta,
     .service .service-item,
     .about .about-content .experience,
     .about .about-content .education,
