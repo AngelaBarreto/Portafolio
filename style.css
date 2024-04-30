@@ -645,7 +645,22 @@ border-bottom: 1px solid var(--bg-black-50);
     max-width: 100%;
     margin-bottom: 40px;
 }
-.portafolio .portafolio-heading h2
+.portafolio .portafolio-heading h2 
+{
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+.portafolio .portafolio-heading h3 
+{
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+.portafolio .portafolio-heading h4 
+{
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+.portafolio .portafolio-heading p 
 {
     color: var(--text-black-900);
     font-weight: 500;
