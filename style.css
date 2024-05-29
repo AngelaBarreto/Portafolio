@@ -665,29 +665,40 @@ border-bottom: 1px solid var(--bg-black-50);
     color: var(--text-black-900);
     font-weight: 500;
 }
-.portafolio .portafolio-item
+
+.portafolio  .portafolio-item
 {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 30px;
+    
 }
+
 .portafolio .portafolio-item-image-corta
 {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
 }
-.portafolio .portafolio-item-inner
+
+
+.portafolio  .portafolio-item-inner 
 {
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    
 }
+
+
 .portafolio .portafolio-item-inner .portafolio-img img 
-{
+{   
+    
     width:100% ;
     display: block;
+    
+    
 }
 .portafolio .portafolio-item-inner .portafolio-video video 
 {
@@ -701,6 +712,77 @@ border-bottom: 1px solid var(--bg-black-50);
 }
 
 
+
+/** inicio menu portafolio **/
+ .service-item-portafolio
+{
+    margin-bottom: 10px;
+}
+ .service-item-portafolio .service-item-inner-portafolio
+{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 20px 40px;
+    text-align:  center;
+    transition: all 0.3s ease;
+}
+.service-item-portafolio .service-item-inner-portafolio:hover
+{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+ .service-item-portafolio .service-item-inner-portafolio .icon-portafolio
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align:  center;
+}
+ .service-item-portafolio .service-item-inner-portafolio .icon-portafolio .fa
+{
+    font-size: 30px;
+    line-height: 20px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+ .service-item-portafolio .service-item-inner-portafolio:hover .icon-portafolio
+{
+    background: var(--skin-color);
+}
+ .service-item-portafolio .service-item-inner-portafolio:hover .icon-portafolio .fa
+{
+    font-size: 15px;
+    color: white;
+}
+.service-item-portafolio .service-item-inner-portafolio h4
+{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.service-item-portafolio .service-item-inner-portafolio .boton
+{
+    margin-top: 10px;
+    bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: var(--skin-color);
+    border: none;
+} 
+.no-mostrar
+{
+    display: none;
+}
+.mostrar
+{
+    display: block;
+}
+/** final menu portafolio**/
 
 
 

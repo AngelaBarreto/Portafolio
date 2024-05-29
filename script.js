@@ -92,5 +92,21 @@ const nav = document.querySelector(".nav"),
                 addBackSection(sectionIndex);
             })
 
+            /**Menu para portafolio */
+            var boton = document.querySelectorAll(".boton");
+            var mostrarComentario = document.querySelectorAll(".no-mostrar");
+
+            boton.forEach(function(elemento, indice){
+             elemento.addEventListener("click", function(){
+                 mostrarComentario[indice].classList.toggle("mostrar");
+                if (mostrarComentario[indice].classList.contains("mostrar")) {
+                 elemento.innerHTML = "Ver Menos";
+
+                } else {
+                 elemento.innerHTML = "Ver Más";
+                 }
+            })
+        })
+        
         
         
